@@ -1,0 +1,14 @@
+{
+  "WorkspaceID": "dv.ws.5b458f87-2bd8-44c6-ac08-92781cceb65e",
+  "RepoID": "dv.repo.8c6961e5-ce28-4a46-96a3-828595aeb892",
+  "Path": "G:\\Games Repo\\Hellocracy",
+  "AccountID": "dv.u.5e95924f2a24a7bb",
+  "BranchID": "dv.branch.1",
+  "BranchName": "main",
+  "CommitID": "dv.commit.12",
+  "Paused": false,
+  "ShouldDownload": true,
+  "RepoName": "NewFpsBastartd",
+  "ReadOnly": false,
+  "DigestMethod": "sha1"
+}
