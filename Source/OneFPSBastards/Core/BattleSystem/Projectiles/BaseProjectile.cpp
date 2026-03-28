@@ -20,7 +20,7 @@ ABaseProjectile::ABaseProjectile()
 	SetRootComponent(CollisionComponent);
 
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovement"));
-	ProjectileMovement->InitialSpeed = 50000.0f;
+	ProjectileMovement->InitialSpeed = 0.0f;
 	ProjectileMovement->MaxSpeed = 5000.0f;
 	ProjectileMovement->ProjectileGravityScale = 1.0f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
@@ -38,7 +38,10 @@ void ABaseProjectile::BeginPlay()
 bool ABaseProjectile::LaunchToTarget(const FVector& StartLocation, const FVector& TargetLocation, float ArcParam)
 {
 	UWorld* World = GetWorld();
-
+	if (!World || !ProjectileMovement)
+	{
+		return false;
+	}
 	SetActorLocation(StartLocation);
 
 	FVector LaunchVelocity = FVector::ZeroVector;
@@ -73,9 +76,7 @@ bool ABaseProjectile::LaunchToTarget(const FVector& StartLocation, const FVector
 
 	ProjectileMovement->ProjectileGravityScale = 1.0f;
 	ProjectileMovement->Activate(true);
-	ProjectileMovement->Velocity = LaunchVelocity.GetSafeNormal();
-	ProjectileMovement->InitialSpeed = LaunchVelocity.Size();
-	
+
 	return true;
 }
 
