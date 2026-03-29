@@ -380,7 +380,11 @@ void AMainCharacter::PlayFootstepSound()
 		}
 
 		// Choose interval based on sprint state
+		if (bIsSprinting) {
+			FootstepIntervalSprint = FootstepIntervalWalk / (SprintSpeed / WalkSpeed);
+		}
 		float CurrentFootstepInterval = bIsSprinting ? FootstepIntervalSprint : FootstepIntervalWalk;
+		
 		//float PitchRandomization = 0.07f * FootstepIntervalWalk / CurrentFootstepInterval;
 		// Pitch / Playback Rate
 		//float Pitch = FMath::FRandRange(1.0f - PitchRandomization, 1.0f + PitchRandomization);
