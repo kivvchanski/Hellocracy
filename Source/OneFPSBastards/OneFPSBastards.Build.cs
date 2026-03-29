@@ -17,8 +17,9 @@ public class OneFPSBastards : ModuleRules
 			"Engine", 
 			"InputCore", 
 			"EnhancedInput", 
-			"UMG"
-		});
+			"UMG",
+            "PhysicsCore"
+        });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
 
