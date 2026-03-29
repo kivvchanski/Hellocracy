@@ -1,0 +1,15 @@
+{
+  "WorkspaceID": "dv.ws.f50538e0-e765-41f0-a6ad-df46751f24eb",
+  "RepoID": "dv.repo.8c6961e5-ce28-4a46-96a3-828595aeb892",
+  "Path": "D:\\Projects\\Hellocray\\NewFpsBastartd",
+  "AccountID": "Google_109448041684141635865",
+  "BranchID": "dv.branch.13",
+  "BranchName": "DevSanya",
+  "CommitID": "dv.commit.342",
+  "Paused": false,
+  "ShouldDownload": false,
+  "RepoName": "NewFpsBastartd",
+  "ReadOnly": false,
+  "DigestMethod": "sha1",
+  "OrganizationTier": "NONE"
+}
