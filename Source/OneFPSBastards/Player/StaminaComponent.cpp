@@ -43,3 +43,15 @@ bool UStaminaComponent::ConsumeStamina(float Amount)
 	return false;
 }
 
+void UStaminaComponent::UpgradeMaxStamina(float Amount)
+{
+	MaxStamina += Amount;
+}
+
+void UStaminaComponent::RegenStamina(float Amount)
+{
+	CurrentStamina += Amount;
+	if (CurrentStamina > MaxStamina) CurrentStamina = MaxStamina;
+}
+
+

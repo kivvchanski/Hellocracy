@@ -21,6 +21,10 @@ public:
 	float GetCurrentStamina() const { return CurrentStamina; }
 	UFUNCTION(BlueprintPure, Category = "Stamina")
 	float GetMaxStamina() const { return MaxStamina; }
+	UFUNCTION(BlueprintCallable, Category = "Stamina")
+	void UpgradeMaxStamina(float Amount);
+	UFUNCTION(BlueprintCallable, Category = "Stamina")
+	void RegenStamina(float Amount);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stamina")
 	bool bIsStaminaBarVisible = false;
