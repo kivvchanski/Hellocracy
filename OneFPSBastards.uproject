@@ -30,6 +30,34 @@
 		{
 			"Name": "RenderDocPlugin",
 			"Enabled": false
+		},
+		{
+			"Name": "ElectraPlayer",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraCDM",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraSubtitles",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraUtil",
+			"Enabled": true
+		},
+		{
+			"Name": "FlacDecoderElectra",
+			"Enabled": true
+		},
+		{
+			"Name": "OpusDecoderElectra",
+			"Enabled": true
+		},
+		{
+			"Name": "VPxDecoderElectra",
+			"Enabled": true
 		}
 	]
 }
