@@ -58,6 +58,10 @@
 		{
 			"Name": "VPxDecoderElectra",
 			"Enabled": true
+		},
+		{
+			"Name": "PCG",
+			"Enabled": true
 		}
 	]
 }
