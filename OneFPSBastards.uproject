@@ -22,14 +22,42 @@
 				"Editor"
 			]
 		},
-		{
-			"Name": "Diversion",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/7c8abd783acd4d66a5290a12a5d67523"
-		},
+		
 		{
 			"Name": "RenderDocPlugin",
 			"Enabled": false
+		},
+		{
+			"Name": "ElectraPlayer",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraCDM",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraSubtitles",
+			"Enabled": true
+		},
+		{
+			"Name": "ElectraUtil",
+			"Enabled": true
+		},
+		{
+			"Name": "FlacDecoderElectra",
+			"Enabled": true
+		},
+		{
+			"Name": "OpusDecoderElectra",
+			"Enabled": true
+		},
+		{
+			"Name": "VPxDecoderElectra",
+			"Enabled": true
+		},
+		{
+			"Name": "PCG",
+			"Enabled": true
 		}
 	]
 }
