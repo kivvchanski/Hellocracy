@@ -50,6 +50,8 @@ public:
     void SelectSlot(int32 Index);
     UFUNCTION(BlueprintPure, Category = "Inventory")
     int32 GetSelectedSlot() const { return SelectedSlotIndex; }
+    UFUNCTION(BlueprintCallable, Category = "Inventory")
+    int32 FindCountOfItems(FName ItemName);
 
 private:
     int32 SelectedSlotIndex = 0;
