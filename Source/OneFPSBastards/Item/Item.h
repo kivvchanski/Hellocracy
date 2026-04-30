@@ -21,6 +21,10 @@ struct ONEFPSBASTARDS_API FItem : public FTableRowBase
     int32 MaxStackSize = 1;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     USoundBase* PickupSound;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    bool bConsumable;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    bool bAutoActivate;
 
     FItem()
         : ItemID(NAME_None)
@@ -29,6 +33,8 @@ struct ONEFPSBASTARDS_API FItem : public FTableRowBase
         , Icon(nullptr)
         , MaxStackSize(1)
         , PickupSound(nullptr)
+        , bConsumable(false)
+        , bAutoActivate(false)
     {
     }
 };

@@ -17,7 +17,6 @@ bool UInventoryComponent::AddItem(FItem Item, int32 Quantity)
 {
     if (Item.ItemID.IsNone()) return false;
 
-    // Try stacking first
     for (auto& Slot : InventorySlots) {
         if (Slot.Item.ItemID == Item.ItemID && Slot.Quantity < Item.MaxStackSize) {
             int32 SpaceLeft = Item.MaxStackSize - Slot.Quantity;
@@ -92,4 +91,15 @@ void UInventoryComponent::SelectSlot(int32 Index)
     if (Index >= 0 && Index < MaxInvetorySlots) {
         SelectedSlotIndex = Index;
     }
+}
+
+int32 UInventoryComponent::FindCountOfItems(FName ItemName)
+{
+    int32 itemCount = 0;
+    for (auto& Slot : InventorySlots) {
+        if (Slot.Item.ItemID == ItemName) {
+            itemCount += Slot.Quantity;
+        }
+    }
+    return itemCount;
 }
