@@ -25,6 +25,10 @@ public:
 	void UpgradeMaxStamina(float Amount);
 	UFUNCTION(BlueprintCallable, Category = "Stamina")
 	void RegenStamina(float Amount);
+	UFUNCTION(BlueprintCallable, Category = "Stamina")
+	float GetStaminaRegenRate();
+	UFUNCTION(BlueprintCallable, Category = "Stamina")
+	void SetStaminaRegenRate(float Amount);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stamina")
 	bool bIsStaminaBarVisible = false;
@@ -37,9 +41,9 @@ private:
 	float MaxStamina = 100.0f;
 	UPROPERTY(VisibleAnywhere, Category = "Stamina")
 	float CurrentStamina = MaxStamina;
-	UPROPERTY(EditDefaultsOnly, Category = "Stamina")
+	UPROPERTY(VisibleAnywhere, Category = "Stamina")
 	float StaminaRegenRate = 17.0f;
-	UPROPERTY(EditDefaultsOnly, Category = "Stamina")
+	UPROPERTY(VisibleAnywhere, Category = "Stamina")
 	float StaminaRegenDelay = 2.0f;
 	UPROPERTY(EditDefaultsOnly, Category = "Stamina")
 	float StaminaBarVisibilityDuration = 4.0f;

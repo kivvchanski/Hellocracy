@@ -54,4 +54,14 @@ void UStaminaComponent::RegenStamina(float Amount)
 	if (CurrentStamina > MaxStamina) CurrentStamina = MaxStamina;
 }
 
+float UStaminaComponent::GetStaminaRegenRate()
+{
+	return StaminaRegenRate;
+}
+
+void UStaminaComponent::SetStaminaRegenRate(float Amount)
+{
+	StaminaRegenRate = Amount;
+}
+
 
