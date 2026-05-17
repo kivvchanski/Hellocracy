@@ -115,7 +115,7 @@ private:
 	bool bIsSprinting = false;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Input")
-	float InteractionDistance = 250.0f;
+	float InteractionDistance = 200.0f;
 	AActor* LastFocusedActor = nullptr; // for item outlining
 	UPROPERTY(EditDefaultsOnly, Category = "Input")
 	float GroundRotationRate = 240.0f;
