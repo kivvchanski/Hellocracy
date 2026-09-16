@@ -62,7 +62,7 @@ Key decisions:
 
 ## What I would improve
 
-<!-- Честный раздел: показывает, что ты видишь свои ошибки. Обнови после исправлений. -->
+
 
 - Use `TObjectPtr` / `TWeakObjectPtr` instead of raw UObject pointers.
 - Update the HUD through delegates instead of polling every tick.
