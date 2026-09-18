@@ -10,8 +10,8 @@ AItemActor::AItemActor()
 	SetRootComponent(Mesh);
 	Mesh->SetSimulatePhysics(false);
 
-	// Enable custom depth for outline
-	Mesh->SetRenderCustomDepth(false); // default off
+
+	Mesh->SetRenderCustomDepth(false); 
 	Mesh->SetCustomDepthStencilValue(1);
 }
 
@@ -19,7 +19,6 @@ void AItemActor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Ensure valid quantity
 	if (Quantity <= 0) {
 		Quantity = 1;
 	}
@@ -32,7 +31,7 @@ void AItemActor::BeginPlay()
 			ItemData = *Row;
 		}
 	}
-	//UE_LOG(LogTemp, Warning, TEXT("Simulating physics: %s"), Mesh->IsSimulatingPhysics() ? TEXT("YES") : TEXT("NO"));
+	
 }
 
 void AItemActor::Interact_Implementation(AMainCharacter* InteractingCharacter)
