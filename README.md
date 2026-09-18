@@ -32,9 +32,8 @@ Systems I implemented:
 | Inventory with stacking | C++ component, DataTable | [`InventoryComponent`](Source/OneFPSBastards/Player/InventoryComponent.cpp) |
 | Interaction: focus highlight, pickups, doors, cabinets | C++ interface + Blueprints | [`InteractableInterface`](Source/OneFPSBastards/Player/InteractableInterface.h), [`ItemActor`](Source/OneFPSBastards/Item/ItemActor.cpp) |
 | Surface-dependent footsteps | C++, Physical Materials, DataAsset | [`SurfaceAudioData`](Source/OneFPSBastards/Player/SurfaceAudioData.cpp) |
-| Weapons: pistol, shotgun, machine gun, rifle, melee, grenades | C++ interfaces + Blueprints | [`ABaseActiveItem`](Source/OneFPSBastards/Item/ABaseActiveItem.h) |
-| Projectiles with ballistic trajectory | C++ | [`BaseProjectile`](Source/OneFPSBastards/Core/BattleSystem/Projectiles/BaseProjectile.cpp) |
-| Enemy AI: 3 enemy types, patrol / chase / attack | Behavior Tree, Blackboard, AIController | `Content/Afterlife/Core/BattleSystem/Enemies` | | |
+| Combat: firearm, melee, grenades with ballistic trajectory | C++ interfaces + Blueprints | [`ABaseActiveItem`](Source/OneFPSBastards/Item/ABaseActiveItem.h), [`BaseProjectile`](Source/OneFPSBastards/Core/BattleSystem/Projectiles/BaseProjectile.cpp) |
+| Enemy AI: shared behavior tree with patrol / chase / attack states, separate boss behavior | Behavior Tree, Blackboard, AIController | `Content/Afterlife/Core/BattleSystem/Enemies` |
 
 ## Architecture
 
