@@ -34,8 +34,7 @@ Systems I implemented:
 | Surface-dependent footsteps | C++, Physical Materials, DataAsset | [`SurfaceAudioData`](Source/OneFPSBastards/Player/SurfaceAudioData.cpp) |
 | Weapons: pistol, shotgun, machine gun, rifle, melee, grenades | C++ interfaces + Blueprints | [`ABaseActiveItem`](Source/OneFPSBastards/Item/ABaseActiveItem.h) |
 | Projectiles with ballistic trajectory | C++ | [`BaseProjectile`](Source/OneFPSBastards/Core/BattleSystem/Projectiles/BaseProjectile.cpp) |
-| Enemy AI: 3 enemy types, patrol / chase / attack | Behavior Tree, Blackboard, AIController | `Content/Afterlife/Core/BattleSystem/Enemies` |
-| [TODO: anything else — main menu, saving, level logic, Steam build] | | |
+| Enemy AI: 3 enemy types, patrol / chase / attack | Behavior Tree, Blackboard, AIController | `Content/Afterlife/Core/BattleSystem/Enemies` | | |
 
 ## Architecture
 
